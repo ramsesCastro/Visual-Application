@@ -1,0 +1,473 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Français (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#include ""res\\TP6_M1_2017.rc2""  // ressources non modifiées par Microsoft Visual C++\r\n"
+    "#include ""l.FRA\\afxres.rc""      // Composants standard\r\n"
+    "#include ""l.FRA\\afxprint.rc""    // ressources impression/aperçu avant impression\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TP6_M1_2017.ico"
+
+IDR_TP6_M1_2017TYPE     ICON                    "res\\TP6_M1_2017Doc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Configuration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "&barre d'état",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "&À propos de TP6_M1_2017...", ID_APP_ABOUT
+    END
+END
+
+IDR_TP6_M1_2017TYPE MENU
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Fermer",                     ID_FILE_CLOSE
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "Enregistrer &sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "&Aperçu avant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "&Configuration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "C&opier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "Co&ller\tCtrl+V",             ID_EDIT_PASTE
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "&barre d'état",               ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenêtre"
+    BEGIN
+        MENUITEM "&Nouvelle fenêtre",           ID_WINDOW_NEW
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Mosaïque",                   ID_WINDOW_TILE_HORZ
+        MENUITEM "&Réorganiser les icônes",     ID_WINDOW_ARRANGE
+    END
+    POPUP "&Aide"
+    BEGIN
+        MENUITEM "&À propos de TP6_M1_2017...", ID_APP_ABOUT
+    END
+    POPUP "Resolution"
+    BEGIN
+        MENUITEM "Equation 2 Deg",              ID_RESOLUTION_EQUATION2DEG
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "E",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "P",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "À propos de TP6_M1_2017"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,21,20
+    LTEXT           "TP6_M1_2017, version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2017",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_SecDeg DIALOGEX 0, 0, 257, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Saisie des coefficients de l'équation du second degré"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,125,155,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,201,155,50,14
+    LTEXT           "L'équation du second degré s'écrit : ax² + bx + c = 0",IDC_STATIC,51,23,171,8
+    LTEXT           "a =",IDC_STATIC,51,46,12,8
+    LTEXT           "b=",IDC_STATIC,52,73,10,8
+    LTEXT           "c=",IDC_STATIC,52,100,10,8
+    EDITTEXT        IDC_EDIT1,85,43,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,85,70,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,85,97,40,14,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <Nom de la société>"
+            VALUE "FileDescription", "TP6_M1_2017"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TP6_M1_2017.exe"
+            VALUE "LegalCopyright", "TODO: (c) <Nom de la société>.  Tous droits réservés."
+            VALUE "OriginalFilename", "TP6_M1_2017.exe"
+            VALUE "ProductName", "TODO: <Nom du produit>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_SecDeg, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_DIALOG_SecDeg AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "Échec de l'initialisation d'OLE.  Assurez-vous que vous utilisez la bonne version des bibliothèques OLE."
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "TP6_M1_2017"
+    IDR_TP6_M1_2017TYPE     "\nTP6_M1_2017\nTP6_M1_2017\n\n\nTP6M12017.Document\nTP6_M1_2017.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "TP6_M1_2017"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Modifie les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Modifie les options d'impression et celles de l'imprimante\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_DIRECT    "Imprimer le document actif à l'aide des options actuelles\nImprimer rapidement"
+    ID_FILE_PRINT_PREVIEW   "Affiche les pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nÀ propos de"
+    ID_APP_EXIT             "Quitte l'application et demande si les documents doivent être enregistrés\nQuitter"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "Bascule vers le volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Bascule vers le volet de fenêtre précédent\nVolet précédent"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "Ouvre une autre fenêtre pour le document actif\nNouvelle fenêtre"
+    ID_WINDOW_ARRANGE       "Réorganise les icônes en bas de la fenêtre\nRéorganiser les icônes"
+    ID_WINDOW_CASCADE       "Réorganise les fenêtres en cascade\nCascade"
+    ID_WINDOW_TILE_HORZ     "Réorganise les fenêtres en une mosaïque\nMosaïque"
+    ID_WINDOW_TILE_VERT     "Réorganise les fenêtres en une mosaïque\nMosaïque"
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en volets\nFractionner"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Coupe la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace un texte spécifié par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne l'intégralité du document\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "Modifie la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Modifie la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Affiche la fenêtre en plein écran"
+    AFX_IDS_SCNEXTWINDOW    "Bascule vers la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Bascule vers la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et demande si les documents doivent être enregistrés"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille normale"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+    AFX_IDS_MDICHILD        "Active cette fenêtre"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode Aperçu avant impression\nFermer l'aperçu"
+END
+
+#endif    // Français (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+LANGUAGE 12, 1
+#include "res\TP6_M1_2017.rc2"  // ressources non modifiées par Microsoft Visual C++
+#include "l.FRA\afxres.rc"      // Composants standard
+#include "l.FRA\afxprint.rc"    // ressources impression/aperçu avant impression
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
